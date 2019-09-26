@@ -85,8 +85,10 @@ Entonces cuando generamos herencia múltiple puede ocurrir que las dos clases pa
 ## Polimorfismo
 
 La palabra "polimorfismo" del griego "poly" y "morphos" ("varias" y "formas") se refiere a la habilidad de objetos de distintas clases de responder al mismo mensaje. Esto se puede conseguir a través de la herencia: un objeto de una clase derivada es al mismo tiempo un objeto de la clase padre, de forma que allí donde se requiere un objeto de la clase padre, también se puede utilizar uno de la clase hija.
-
-    class Persona():
+ 
+En ocaciones también se utiliza el término poliformismo para referirse a la sobrecarga de métodos, término que se define como la capacidad del lenguaje de determinar qué metodo ejecutar entre varios métodos con igual nombre según el tipo o numero de los parámetros que se le pasan.
+ 
+class Persona():
         def __init__(self):
             self.cedula = 13765890
         def mensaje(self):
@@ -96,10 +98,8 @@ La palabra "polimorfismo" del griego "poly" y "morphos" ("varias" y "formas") se
         def __init__(self):
             self.__especialista = 1
         def mensaje(self):
-            print("mensaje desde la clase Obrero")
+            print("mensaje desde la clase Obrero")          
 
-En ocaciones también se utiliza el término poliformismo para referirse a la sobrecarga de métodos, término que se define como la capacidad del lenguaje de determinar qué metodo ejecutar entre varios métodos con igual nombre según el tipo o numero de los parámetros que se le pasan.
- 
 ## Encapsulacion
 
 La encapsularon se refiere a impedir el acceso a determinados métodos y atributos de los objetos, estableciendo así que puede utilizarse desde fuera de la clase. En otros lenguajes de programación esto se consigue con los modificadores de acceso que definen si cualquiera puede acceder a esa función o variable (public) o si esta restringido el acceso a la propia clase (private).
