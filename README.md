@@ -93,7 +93,7 @@ En ocaciones también se utiliza el término poliformismo para referirse a la so
             self.cedula = 13765890
         def mensaje(self):
             print("mensaje desde la clase Persona")
-                
+
     class Obrero(Persona):
         def __init__(self):
             self.__especialista = 1
@@ -106,11 +106,55 @@ La encapsularon se refiere a impedir el acceso a determinados métodos y atribut
 
 En python no existen los modificadores de acceso, y lo que se suele hacer es que el acceso a una variable o funciona viene determinado por su nombre: si el nombre comienza con dos guiones bajos (pero no termina con dos guiones bajos), se trata de una variable o funcional privada, en caso contrario es publica.
 
-Ejemplificando:
+    class NombreClase:
+        __atributo1
+        __atributo2
+
+    def __metodo1(self):
+        pass
+
+    def __metodo2(self):
+        pass
+
+Ejemplo de encapsulacion:
+
+    class CajaSeguridad:
+        __contraClave = '123qwe'
+
+        def seguro(self, clave):
+            if self.__contraClave == clave :
+                print('Acceso concedido')
+            else :
+                print('Acceso denegado')
 
 En ocasiones también puede suceder que queramos permitir el acceso a algún atributo de nuestro objeto pero de manera controlada, para esto podemos hacer uso de los famosos métodos 'get' y 'set' (getVariable, setVariable), nombre que reciben por conveniencia, pero que pueden recibir el nombre que queramos. 
 
-Ejemplo:
+    class CajaSeguridad:
+        __contraClave = '123qwe'
+
+        def seguro(self, clave):
+            if self.__contraClave == clave :
+                print('Acceso concedido')
+            else :
+                print('Acceso denegado')
+
+        def getClave(self):
+            return __contraClave
+        
+        def setClave(self, nuevaClave):
+            __contraClave = nuevaClave
+
 
 ## Metodos especiales
 
+Los metodos especiales en python se pueden identificar por que comienzan y terminan con dos guiones bajos:
+
+    __metodo__
+
+A continuacion se uestran algunos de los mas comunes:
+
+    __init__(self, args) # Constructor de una clase
+
+    __del__(self) # Metodo llamado cuando se destruira el objeto
+
+    __str__(self) # Cadena de texto que representa el objeto
