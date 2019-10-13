@@ -18,4 +18,4 @@ En ocaciones también se utiliza el término poliformismo para referirse a la so
             print("mensaje desde la clase Obrero")          
 ```
 
-[Siguiente: Encapsulacion](Encapsulacion/Encapsulacion.md)
+[Siguiente: Encapsulacion](/Encapsulacion/Encapsulacion.md)
