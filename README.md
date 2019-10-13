@@ -4,8 +4,8 @@ La programación orientada a objetos es un paradigma más de la programación qu
 
 ## Temas
 
-* [Objetos y Clases](Tipos/Tipos.md)
-* [Metodos Especiales](OperadoresArit/Operadores.md)
-* [Herencia](ControlFlujo/ControlFlujo.md)
-* [Polimorfismo](/Colecciones/Colecciones.md)
-* [Encapsulacion](Funciones/Funciones.md)
+* [Objetos y Clases](ObjCls/ObjetosClases.md)
+* [Metodos Especiales](MetEsp/MetodosEspeciales.md)
+* [Herencia](Herencia/Herencia.md)
+* [Polimorfismo](Polimorfismo/Polimorfismo.md)
+* [Encapsulacion](Encapsulacion/Encapsulacion.md)
