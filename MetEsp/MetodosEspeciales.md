@@ -15,3 +15,5 @@ A continuacion se uestran algunos de los mas comunes:
 
     __str__(self) # Cadena de texto que representa el objeto
 ```
+
+[Siguiente: Metodos Especiales](MetEsp/MetodosEspeciales.md)

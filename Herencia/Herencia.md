@@ -38,3 +38,5 @@ En python a diferencia de otros lenguajes, se permite la herencia múltiple. Es 
 ```
 
 Entonces cuando generamos herencia múltiple puede ocurrir que las dos clases padre tengan un mismo método y en este caso se sobreescribirian pero siempre empezando por el método de la clase declarada más a la izquierda.
+
+[Siguiente: Polimorfismo](Polimorfismo/Polimorfismo.md)
