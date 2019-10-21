@@ -1,4 +1,4 @@
-# Herencia 
+# Herencia
  
 El concepto de herencia en POO, es una abstracción del mundo para referirnos a cuando una clase hereda atributos y métodos de otra, es decir, que de una super clase heredemos los métodos y atributos a una subclase. También se le puede conocer a esta acción como extender de una clase.
 
@@ -6,7 +6,6 @@ Un ejemplo práctico para este concepto es el siguiente:
 
 ```python
     class Instrumento:
-
         def __init__(self, precio):
             self.precio = precio
             imprimir_precio()
@@ -38,5 +37,7 @@ En python a diferencia de otros lenguajes, se permite la herencia múltiple. Es 
 ```
 
 Entonces cuando generamos herencia múltiple puede ocurrir que las dos clases padre tengan un mismo método y en este caso se sobreescribirian pero siempre empezando por el método de la clase declarada más a la izquierda.
+
+[codigo](/Herencia/herencia.py)
 
 [Siguiente: Polimorfismo](/Polimorfismo/Polimorfismo.md)

@@ -1,5 +1,3 @@
-# Ejemplo de abstraccion para el paradigma POO
-
 class Auto: # Como BPP la primer letra del nombre va en mayusulas
     def __init__(self, marca, gasolina):
         self.marca = marca

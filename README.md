@@ -9,3 +9,8 @@ La programación orientada a objetos es un paradigma más de la programación qu
 * [Herencia](Herencia/Herencia.md)
 * [Polimorfismo](Polimorfismo/Polimorfismo.md)
 * [Encapsulacion](Encapsulacion/Encapsulacion.md)
+
+## Material de apoyo
+
+* https://entrenamiento-python-basico.readthedocs.io/es/latest/leccion9/poo.html
+* https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos

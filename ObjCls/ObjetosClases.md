@@ -42,4 +42,6 @@ Ahora bien, dentro de la declaración de nuestro constructor tenemos tres parám
 
 En el ejemplo anterior vemos que dentro del constructor tenemos declaradas dos variables a las que les asignamos los parámetros que recibimos, esto es por que la palabra "self" seguida del operador “ . “ nos sirve para especificar a una variable local dentro del objeto, es decir, cada vez que hagamos uso de esta tenemos que especificarla tal y como lo hacemos en el constructor.
 
+[codigo](/ObjCls/ejemploAuto.py)
+
 [Siguiente: Metodos Especiales](/MetEsp/MetodosEspeciales.md)
