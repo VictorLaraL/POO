@@ -1,4 +1,4 @@
-class Auto: # Como BPP la primer letra del nombre va en mayusulas
+class Auto: # Como BPP la primer letra del nombre va en mayusculas
     def __init__(self, marca, gasolina):
         self.marca = marca
         if (gasolina > 0):
