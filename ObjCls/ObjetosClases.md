@@ -7,6 +7,8 @@ Es una entidad que agrupa un estado y una funcionalidad relacionadas. El estado 
 ## Clase
 Una clase no es más que una plantilla genérica a partir de la cual instanciar los objetos; plantilla que es la que define que atributos y métodos tendrán los objetos de esa clase.
 
+![auto](/imgs/ObjCls.png)
+
 ## Declaración en python
 En python las clases se definen mediante la palabra clave 'class' seguido del nombre de la clase, dos puntos y a continuación, indentado respecto  al cuerpo de la clase.
 

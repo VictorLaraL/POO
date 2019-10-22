@@ -29,7 +29,7 @@ Ejemplo de encapsulacion:
                 print('Acceso denegado')
 ```
 
-En ocasiones también puede suceder que queramos permitir el acceso a algún atributo de nuestro objeto pero de manera controlada, para esto podemos hacer uso de los famosos métodos 'get' y 'set' (getVariable, setVariable), nombre que reciben por conveniencia, pero que pueden recibir el nombre que queramos. 
+En ocasiones también puede suceder que queramos permitir el acceso a algún atributo de nuestro objeto pero de manera controlada, para esto podemos hacer uso de los famosos métodos 'get' y 'set' (getVariable, setVariable), nombre que reciben por conveniencia, pero que pueden recibir el nombre que queramos.
 
 ```python
     class CajaSeguridad:
