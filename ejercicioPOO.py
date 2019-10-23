@@ -1,6 +1,7 @@
 import math
 
 class Punto():
+    #Clase que genera los puntos en el plano
     def __init__(self, x, y):
         self.__x = x
         self.__y = y
@@ -22,63 +23,97 @@ class Punto():
     def __str__(self):
         return 'x = {}, y = {}'.format(self.__x, self.__y)
 
-class Poligono():
-    def __init__(self, numLados):
-        self.numLados = numLados
+class PoligonoR():
+    # Clase que recibe una lista de puntos y calcula el area y perimetro de las figuras
+    def __init__(self, puntos):
+        self.puntos = puntos
+        
 
-    def area(self, *puntos):
-        if(len(puntos) == 3):
-            triangulo = Triangulo()
-            triangulo.area()
+    def area(self):
+        if(len(self.puntos) == 3 and self.comprobacionPI()):
+            triangulo = Triangulo(self.puntos)
+            return triangulo.area()
+                
+        elif(len(self.puntos) == 4 and self.comprobacionPI()):
+            cuadrado = Cuadrado(self.puntos)
+            return cuadrado.area()
 
-        elif(len(puntos) == 4):
-            cuadrado = Cuadrado()
-            cuadrado.area()
-
-        elif(len(puntos) >= 5):
-            pass
+        elif(len(self.puntos) >= 5 and self.comprobacionPI()):
+            return self.areaPolReg()
         else:
             print('No cuentas con los puntos necesarios!')
 
-    def distDosPuntos(p1, p2):
-        distancia = math.sqrt((p2.getX() - p1.getX()) + (p2.getY() - p1.getY()))
+    def areaPolReg(self):
+        cantPunt = len(self.puntos)
+    
+        if (cantPunt % 2 == 0):
+            apotema = (self.distDosPuntos(self.puntoMedio(self.puntos[0], self.puntos[1]), (self.puntoMedio(self.puntos[cantPunt/2], self.puntos[(cantPunt/2)+1]))))/2
+            areaP = (self.perimetro() * apotema)/2
+            return areaP    
+        else:
+            # Calcular area del poligono de lados impares
+            pass
+
+    def perimetro(self):
+        perimetro = 0
+        for x in range(1,len(self.puntos)):
+            perimetro += self.distDosPuntos(self.puntos[x-1], self.puntos[x])
+        return perimetro
+
+    def comprobacionPI(self):
+        for x in range(2,len(self.puntos)):
+            if (x < 3): 
+                dist1 = self.distDosPuntos(self.puntos[x-2], self.puntos[x-1])
+                dist2 = self.distDosPuntos(self.puntos[x-1], self.puntos[x])
+            else: 
+                if (dist1 != dist2):
+                    return False
+                dist1 = dist2
+                dist2 = self.distDosPuntos(self.puntos[x-1], self.puntos[x])
+        return True
+
+    def distDosPuntos(self, p1, p2):
+        distancia = math.sqrt(((p2.getX() - p1.getX())**2) + ((p2.getY() - p1.getY())**2))
         return distancia
 
-    def __str__(self):
-        return ''' 
-        Los puntos del triangulo son: {}, {}, {},
-        El area es: {}
-        El perimetro es: {}
-        '''
+    def puntoMedio(self, p1, p2):
+        x = (p1.getX() - p2.getX())/2
+        y = (p1.getY() - p2.getY())/2
+        return Punto(x,y)
 
-class Triangulo(Poligono):
-    def __init__(self):
+    def imprimirPuntos(self):
+        print('los puntos del poligono son: ')
+        for punto in self.puntos:
+            print(punto)
+
+    def __str__(self):
+        return '{}'.format(self.imprimirPuntos())
+
+
+class Triangulo(PoligonoR):
+    def __init__(self, puntos):
+        super().__init__(puntos)
+
+    def area(self):
+        altura = super().distDosPuntos(super().puntoMedio(self.puntos[0], self.puntos[1]), self.puntos[2])
+        base = super().distDosPuntos(self.puntos[0], self.puntos[1]) 
+        areaT = (base * altura)/2
+        return areaT 
         
+class Cuadrado(PoligonoR):
+    def __init__(self, puntos):
+        super().__init__(puntos)
 
-    def __str__(self):
-        return ''' 
-        Los puntos del triangulo son: {}, {}, {},
-        El area es: {}
-        El perimetro es: {}
-        '''
-
-class Cuadrado(Poligono):
+    def area(self):
+        areaC = super().distDosPuntos(self.puntos[0], self.puntos[1]) * super().distDosPuntos(self.puntos[1], self.puntos[2])
+        print(areaC)
+        return areaC  
     
-
-    def __str__(self):
-        return ''' 
-        Los puntos del triangulo son: {}, {}, {},
-        El area es: {}
-        El perimetro es: {}
-        '''
-
 if __name__ == "__main__":
-    
-    print('''---------------------------------
-                Calculadora de poligonos
-                1) ingresar puntos
-                2) Calcular
-    ''')
+    listaP = [Punto(1,1), Punto(-1,1), Punto(-1,-1), Punto(1,-1)]
+    cuad = Cuadrado(listaP)
+    polig = PoligonoR(listaP)
 
+    print(polig)
 
-
+    print(cuad)
