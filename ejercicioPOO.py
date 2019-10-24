@@ -110,9 +110,9 @@ class Cuadrado(PoligonoR):
         return areaC  
     
 if __name__ == "__main__":
-    listaP = [Punto(1,1), Punto(-1,1), Punto(-1,-1), Punto(1,-1)]
-    cuad = Cuadrado(listaP)
-    polig = PoligonoR(listaP)
+    listaC = [Punto(1,1), Punto(-1,1), Punto(-1,-1), Punto(1,-1)]
+    cuad = Cuadrado(listaC)
+    polig = PoligonoR(listaC)
 
     print(polig)
 

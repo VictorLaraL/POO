@@ -42,8 +42,8 @@ En ocasiones también puede suceder que queramos permitir el acceso a algún atr
                 print('Acceso denegado')
 
         def getClave(self):
-            return __contraClave
+            return self.__contraClave
 
         def setClave(self, nuevaClave):
-            __contraClave = nuevaClave
+            self.__contraClave = nuevaClave
 ```
