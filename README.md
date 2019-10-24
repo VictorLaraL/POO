@@ -14,3 +14,4 @@ La programación orientada a objetos es un paradigma más de la programación qu
 
 * https://entrenamiento-python-basico.readthedocs.io/es/latest/leccion9/poo.html
 * https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos
+* https://pythones.net/la-funcion-super-en-python-bien-explicada-y-con-ejemplos-oop/
