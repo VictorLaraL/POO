@@ -23,9 +23,9 @@ En python las clases se definen mediante la palabra clave 'class' seguido del no
 ```
 
 El primer método, el cual declaramos, tiene una característica en particular y es el uso de “__” al inicio y final de la palabra "init". 
-En python, los métodos especiales tienen esta misma característica pero con nombres distintos (p.ej.  “__str__”, “__add__”, “__sub__”).
+En python, los métodos especiales tienen esta misma característica, pero con nombres distintos (p.ej.  “__str__”, “__add__”, “__sub__”).
 
-Pero, en particular el método init nos sirve como constructor, es decir, que de acuerdo a los parámetros que nos pida el método en la clase, son los parámetros que ingresaremos al crear un objeto de dicha clase. Ejemplo:
+Pero en particular, el método init nos sirve como constructor, es decir, que de acuerdo a los parámetros que nos pida el método en la clase, son los parámetros que ingresaremos al crear un objeto de dicha clase. Ejemplo:
 
 ```python
     class Nombre_clase:
