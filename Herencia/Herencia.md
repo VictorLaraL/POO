@@ -26,7 +26,7 @@ Ahora bien, qué pasaría sí ambas clases ( Guitarra , Batería), desearan tene
 
 # Herencia múltiple.
 
-En python a diferencia de otros lenguajes, se permite la herencia múltiple, es decir, una clase puede heredar de varias clases de manera simultánea. En el ejemplo anterior sí almacenáramos los artículos musicales dentro de una tienda también podríamos crear una clase 'artículos', entonces 'Guitarra' y 'Batería' serían también artículos, por lo que podrían heredar de ambas clases. p.ej.
+En python, a diferencia de otros lenguajes, se permite la herencia múltiple, es decir, una clase puede heredar de varias clases de manera simultánea. En el ejemplo anterior, sí almacenáramos los artículos musicales dentro de una tienda también podríamos crear una clase 'artículos', entonces, 'Guitarra' y 'Batería' serían también artículos, por lo que podrían heredar de ambas clases. p.ej.
 
 ```python
     class Guitarra(Producto, Instrumento)
