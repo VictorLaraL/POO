@@ -1,9 +1,9 @@
-# Metodos especiales.
+# Métodos especiales.
 
 Los métodos especiales en python se pueden identificar porque comienzan y terminan con dos guiones bajos:
 
 ```python
-    __metodo__
+    __método__
 ```
 
 A continuación, se muestran algunos de los más comunes:
