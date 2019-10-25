@@ -40,7 +40,7 @@ Entonces, cuando generamos herencia múltiple, puede ocurrir que las dos clases 
 
 [Código](/Herencia/herencia.py)
 
-# Metodo super().
+# Método super().
 
 Esta función nos permite invocar y conservar un método o atributo de una clase padre (primaria) desde una clase hija (secundaria) sin tener que nombrarla explícitamente. Esto nos brinda la ventaja de poder cambiar el nombre de la clase padre (base) o hija (secundaria) cuando queramos y aún así mantener un código funcional, sencillo  y mantenible.
 
