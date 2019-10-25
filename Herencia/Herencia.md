@@ -22,7 +22,7 @@ Un ejemplo práctico para este concepto es el siguiente:
 
 En el ejemplo anterior podemos ver cómo la clase instrumento tiene un atributo (precio) y un método (imprimir_precio), este atributo y método se podrán utilizar de igual forma en las clases 'Guitarra' y 'Batería', es decir, ahora los objetos de estas clases tendrán el atributo precio y el método imprimir_precio.
 
-Ahora bien, qué pasaría sí ambas clases ( Guitarra , Bateria), desearan tener su propio método __init__, bastaría con escribir un nuevo método tal y como lo haríamos normalmente, a esta acción se le conoce como sobreescritura de métodos. Otra situación que nos puede ocurrir es necesitar sobreescribir un método, pero también el método de la clase padre. En este caso usaríamos la sintaxis SuperClase.metodo(self. args), para llamar al método de igual nombre de la clase padre. Por ejemplo, para llamar al método init de la clase padre de 'Guitarra' lo haríamos de la siguiente forma: Instrumento.__init__(self, precio).
+Ahora bien, qué pasaría sí ambas clases ( Guitarra , Batería), desearan tener su propio método __init__, bastaría con escribir un nuevo método tal y como lo haríamos normalmente, a esta acción se le conoce como sobreescritura de métodos. Otra situación que nos puede ocurrir es necesitar sobreescribir un método, pero también el método de la clase padre. En este caso usaríamos la sintaxis SuperClase.metodo(self. args), para llamar al método de igual nombre de la clase padre. Por ejemplo, para llamar al método init de la clase padre de 'Guitarra' lo haríamos de la siguiente forma: Instrumento.__init__(self, precio).
 
 # Herencia múltiple.
 
