@@ -1,22 +1,22 @@
-# Encapsulacion
+# Encapsulación.
 
-La encapsularon se refiere a impedir el acceso a determinados métodos y atributos de los objetos, estableciendo así que puede utilizarse desde fuera de la clase. En otros lenguajes de programación esto se consigue con los modificadores de acceso que definen si cualquiera puede acceder a esa función o variable (public) o si esta restringido el acceso a la propia clase (private).
+La encapsulación se refiere a impedir el acceso a determinados métodos y atributos de los objetos, estableciendo así, que puede utilizarse desde fuera de la clase. En otros lenguajes de programación esto se consigue con los modificadores de acceso que definen sí cualquiera puede acceder a esa función o variable (public) o sí esta restringido el acceso a la propia clase (private).
 
-En python no existen los modificadores de acceso, y lo que se suele hacer es que el acceso a una variable o funciona viene determinado por su nombre: si el nombre comienza con dos guiones bajos (pero no termina con dos guiones bajos), se trata de una variable o funcional privada, en caso contrario es publica.
+En python no existen los modificadores de acceso, y lo que se suele hacer es que el acceso a una variable o función viene determinado por su nombre: sí el nombre comienza con dos guiones bajos (pero no termina con dos guiones bajos), se trata de una variable o función privada, en caso contrario es pública.
 
 ```python
     class NombreClase:
         __atributo1
         __atributo2
 
-    def __metodo1(self):
+    def __método1(self):
         pass
 
-    def __metodo2(self):
+    def __método2(self):
         pass
 ```
 
-Ejemplo de encapsulacion:
+Ejemplo de encapsulación:
 
 ```python
     class CajaSeguridad:
@@ -29,7 +29,7 @@ Ejemplo de encapsulacion:
                 print('Acceso denegado')
 ```
 
-En ocasiones también puede suceder que queramos permitir el acceso a algún atributo de nuestro objeto pero de manera controlada, para esto podemos hacer uso de los famosos métodos 'get' y 'set' (getVariable, setVariable), nombre que reciben por conveniencia, pero que pueden recibir el nombre que queramos.
+En ocasiones también puede suceder que queramos permitir el acceso a algún atributo de nuestro objeto, pero de manera controlada, para esto podemos hacer uso de los famosos métodos 'get' y 'set' (getVariable, setVariable), nombre que reciben por conveniencia, pero que pueden recibir el nombre que queramos.
 
 ```python
     class CajaSeguridad:
