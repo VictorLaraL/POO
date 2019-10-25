@@ -1,5 +1,5 @@
 # Objetos y Clases.
-Dentro del POO podemos hacer una abstracción del mundo real mediante lo que se conocen como objetos y clases. De ahora en adelante, si utilizamos este paradigma nuestros programas, entonces, se basaran en estos dos tipos y sus interacciones entre estos dos mismos.
+Dentro del POO podemos hacer una abstracción del mundo real mediante lo que se conocen como objetos y clases. De ahora en adelante si utilizamos este paradigma, nuestros programas entonces, se basaran en estos dos tipos y sus interacciones entre estos dos mismos.
 
 ## Objeto.
 Es una entidad que agrupa un estado y una funcionalidad relacionadas. El estado del objeto se define a través de variables que llamamos atributos, mientras que, la funcionalidad se modela a través de funciones a las que se les conoce con el nombre de métodos del objeto.  
