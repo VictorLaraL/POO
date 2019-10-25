@@ -1,21 +1,21 @@
-# Metodos especiales
+# Metodos especiales.
 
-Los metodos especiales en python se pueden identificar por que comienzan y terminan con dos guiones bajos:
+Los métodos especiales en python se pueden identificar porque comienzan y terminan con dos guiones bajos:
 
 ```python
     __metodo__
 ```
 
-A continuacion se uestran algunos de los mas comunes:
+A continuación, se muestran algunos de los más comunes:
 
 ```python
-    __init__(self, args) # Constructor de una clase
+    __init__(self, args) # Constructor de una clase.
 
-    __del__(self) # Metodo llamado cuando se destruira el objeto
+    __del__(self) # Método llamado cuando se destruirá el objeto.
 
-    __str__(self) # Cadena de texto que representa el objeto
+    __str__(self) # Cadena de texto que representa el objeto.
 ```
 
-[codigo](/ObjCls/ejemploAuto.py)
+[Código](/ObjCls/ejemploAuto.py)
 
 [Siguiente: Herencia](/Herencia/Herencia.md)
