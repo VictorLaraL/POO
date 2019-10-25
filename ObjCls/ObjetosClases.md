@@ -40,7 +40,7 @@ Pero en particular, el método init nos sirve como constructor, es decir, que de
     objeto = Nombre_clase(x, y)
 ```
 
-Ahora bien, dentro de la declaración de nuestro constructor tenemos tres parámetros y nosotros solo le estamos pasando dos, esto es, porque el primer parámetro hace referencia a que pertenece a la clase, y esta característica se aplica en todos los métodos a declarar (el nombre del primer parámetro puede ser cualquiera, pero por BP se utiliza la palabra "self").
+Ahora bien, dentro de la declaración de nuestro constructor tenemos tres parámetros y nosotros solo le estamos pasando dos, esto es, porque el primer parámetro hace referencia a la clase a la que pertenece, y esta característica se aplica en todos los métodos a declarar (el nombre del primer parámetro puede ser cualquiera, pero por BP se utiliza la palabra "self").
 
 En el ejemplo anterior vemos que dentro del constructor tenemos declaradas dos variables a las que les asignamos los parámetros que recibimos, esto es, porque la palabra "self" seguida del operador “ . “ nos sirve para especificar a una variable local dentro del objeto, es decir, cada vez que hagamos uso de esta tenemos que especificarla tal y como lo hacemos en el constructor.
 
