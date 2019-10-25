@@ -1,6 +1,6 @@
 # Encapsulación.
 
-La encapsulación se refiere a impedir el acceso a determinados métodos y atributos de los objetos, estableciendo así, que puede utilizarse desde fuera de la clase. En otros lenguajes de programación esto se consigue con los modificadores de acceso que definen sí cualquiera puede acceder a esa función o variable (public) o sí esta restringido el acceso a la propia clase (private).
+La encapsulación se refiere a impedir el acceso a determinados métodos y atributos de los objetos, estableciendo así, que puede utilizarse desde fuera de la clase. En otros lenguajes de programación esto se consigue con los modificadores de acceso que definen; sí cualquiera puede acceder a esa función o variable (public) o sí esta restringido el acceso a la propia clase (private).
 
 En python no existen los modificadores de acceso, y lo que se suele hacer es que el acceso a una variable o función viene determinado por su nombre: sí el nombre comienza con dos guiones bajos (pero no termina con dos guiones bajos), se trata de una variable o función privada, en caso contrario es pública.
 
