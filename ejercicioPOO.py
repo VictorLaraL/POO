@@ -61,15 +61,13 @@ class PoligonoR():
         return perimetro
 
     def comprobacionPI(self):
-        for x in range(2,len(self.puntos)):
-            if (x < 3): 
-                dist1 = self.distDosPuntos(self.puntos[x-2], self.puntos[x-1])
-                dist2 = self.distDosPuntos(self.puntos[x-1], self.puntos[x])
-            else: 
-                if (dist1 != dist2):
-                    return False
-                dist1 = dist2
-                dist2 = self.distDosPuntos(self.puntos[x-1], self.puntos[x])
+        dist1 = self.distDosPuntos(self.puntos[0], self.puntos[1])
+        dist2 = self.distDosPuntos(self.puntos[1], self.puntos[2])
+        for x in range(3,len(self.puntos)): 
+            if (dist1 != dist2 and dist2 ): # Comprobacionentre las caras de la figura y que el ultimo punto se conecte con el primero
+                return False
+            dist1 = dist2
+            dist2 = self.distDosPuntos(self.puntos[x-1], self.puntos[x])            
         return True
 
     def distDosPuntos(self, p1, p2):
