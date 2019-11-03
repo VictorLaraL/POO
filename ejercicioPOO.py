@@ -1,3 +1,5 @@
+# https://www.evernote.com/l/AkA_cyWY_HpOZIChdB8S3dgfHoBE-8hJBJs/
+
 import math
 
 class Punto():
@@ -92,7 +94,6 @@ class PoligonoR():
     def __str__(self):
         return '{}'.format(self.imprimirPuntos())
 
-
 class Triangulo(PoligonoR):
     # Clase que hereda de PoligonoR y calcula el area de un triangulo regular
     def __init__(self, puntos):
@@ -115,6 +116,7 @@ class Cuadrado(PoligonoR):
         return areaC  
     
 if __name__ == "__main__":
+
     listaC = [Punto(1,1), Punto(-1,1), Punto(-1,-1), Punto(1,-1)]
     cuad = Cuadrado(listaC)
     polig = PoligonoR(listaC)
