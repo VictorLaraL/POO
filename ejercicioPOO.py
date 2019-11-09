@@ -122,3 +122,7 @@ if __name__ == "__main__":
     print(polig)
 
     print(cuad)
+
+    #polig.area()
+
+    polig.perimetro()
