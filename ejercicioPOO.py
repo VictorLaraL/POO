@@ -66,13 +66,18 @@ class PoligonoR():
         # Comprobamos que sea un Poligono y que sea regular 
         dist1 = self.distDosPuntos(self.puntos[0], self.puntos[1])
         dist2 = self.distDosPuntos(self.puntos[1], self.puntos[2])
-        for x in range(3,len(self.puntos)):
-            # Comprobacion entre las aristas de la figura y que el ultimo punto se conecte con el primero 
-            if (dist1 != dist2 or dist2 != self.distDosPuntos(self.puntos[0], self.puntos[len(self.puntos)])): 
-                return False
-            dist1 = dist2
-            dist2 = self.distDosPuntos(self.puntos[x-1], self.puntos[x])            
-        return True
+
+        # Comprobacion de que es un poligono puesto que el primer punto se une con el ultimo 
+        if (dist1 == self.distDosPuntos(self.puntos[0], self.puntos[len(self.puntos)-1])): 
+            for x in range(3,len(self.puntos)):
+                # Comprobacion entre las aristas de la figura
+                if (dist1 != dist2): 
+                    return False
+                dist1 = dist2
+                dist2 = self.distDosPuntos(self.puntos[x-1], self.puntos[x])            
+            return True
+        else:
+            return False
 
     def distDosPuntos(self, p1, p2):
         # Calculamos la distancia entre dos puntos
@@ -86,10 +91,10 @@ class PoligonoR():
         return Punto(x,y)
 
     def imprimirPuntos(self):
-        # Impresion de los puntos en un objeto Poligono
-        print('los puntos del poligono son: ')
+        # Imprimimos los puntos en un objeto Poligono
         for punto in self.puntos:
             print(punto)
+        return 'Son los puntos del Poligono'
 
     def __str__(self):
         return '{}'.format(self.imprimirPuntos())
@@ -112,7 +117,6 @@ class Cuadrado(PoligonoR):
 
     def area(self):
         areaC = super().distDosPuntos(self.puntos[0], self.puntos[1]) * super().distDosPuntos(self.puntos[1], self.puntos[2])
-        print(areaC)
         return areaC  
     
 if __name__ == "__main__":
@@ -125,6 +129,6 @@ if __name__ == "__main__":
 
     print(cuad)
 
-    #polig.area()
+    print(polig.area())
 
-    polig.perimetro()
+    print(polig.perimetro())
